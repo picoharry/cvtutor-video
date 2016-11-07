@@ -78,7 +78,7 @@ int processImage(const string filename, Ptr<BackgroundSubtractor> pMOG2)
 {
 	static int counter = 0;
 
-	//read the first file of the sequence
+	// Read the image file.
 	Mat frame = imread(filename);
 	if (frame.empty()) {
 		//error in opening the image
